@@ -1,0 +1,28 @@
+#section{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    margin-top: 50px;
+}
+
+.form{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+label{
+    color: #ffa500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    background-color: #ffa500;
+    border:1px solid gray;
+    border-radius: 50%;
+    a{
+        text-decoration: none;
+    }
+}
