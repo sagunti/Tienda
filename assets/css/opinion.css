@@ -1,0 +1,16 @@
+.opinionClientes{
+    text-align: center;
+    .galeriaClientes{
+        background-color: orange;
+        padding:50px;
+        margin:0 auto;
+        width: 60%;
+        display:flex;
+        justify-content: space-evenly;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        .tarjetaClientes{
+            width: 250px;
+        }
+    }
+}
