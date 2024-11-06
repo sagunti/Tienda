@@ -1,0 +1,34 @@
+.footer{
+    background-image: radial-gradient(circle, #050505, #141111, #0b0808, #161515, #0f0a0b, #181616, #181415, #251e1f, #211d1e, #231c1d, #1a1516, #101010);
+    font-size: 10px;
+    .logo{
+        width: 100px;
+    }
+    ul{
+        list-style: none;
+      
+        a{
+            text-decoration: none;
+            color:  orange;
+            font-size: 1.5em;
+        }
+        .fa-instagram, .fa-facebook, .fa-twitter{
+            color: orange;
+            font-size: 3em;
+        }
+    }
+    .fa-whatsapp{
+        font-size: 5em;
+        color:rgb(44, 181, 44);
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+       
+    }
+    p{
+        font-size: 1.5em;
+        color: orange;
+      
+    }
+
+}

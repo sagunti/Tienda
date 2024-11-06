@@ -1,28 +1,37 @@
-#section{
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor{
-    margin-top: 50px;
-}
-
-.form{
-    justify-content: center;
-    align-items: center;
+section{
+    margin-top: 10px;
+    height: 100vh;
     
-}
+    text-align: center;
+    .contenedor{
+        margin-top: 10px;
+        label{
+            color: #ffa500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        legend{
+            color: orange;
+            
+        }
+        textarea{
+            width: 200px;
+            height: 100px;
+        }
+        button{
+            background-color: #ffa500;
+            border:1px solid gray;
+            border-radius: 50%;
+            a{
+                text-decoration: none;
+            }
+        }
 
-label{
-    color: #ffa500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-button{
-    background-color: #ffa500;
-    border:1px solid gray;
-    border-radius: 50%;
-    a{
-        text-decoration: none;
     }
 }
+
+
+
+
+
+
