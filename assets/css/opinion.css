@@ -1,5 +1,6 @@
 .opinionClientes{
     text-align: center;
+    color: orange;
     .galeriaClientes{
         background-color: orange;
         padding:50px;
@@ -11,6 +12,11 @@
         flex-wrap: wrap;
         .tarjetaClientes{
             width: 250px;
+            color: black;
+            .imagenCliente{
+                width: 20%;
+                height: 20%;
+            }
         }
     }
 }
