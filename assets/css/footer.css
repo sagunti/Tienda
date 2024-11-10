@@ -1,21 +1,7 @@
 .footer{
-    width: 90%;
-    margin:0 auto;
-     display:grid;
-     /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr 1fr 0.5fr 1fr;
-    /* grid-auto-rows: 250px;*/
-     grid-template-areas:  "chese choco"
-                           "budin choco"
-                           "cuadrado choco"
-                           "cuadrado alfajor"
-                          ;
-     gap:25px;
+    
     background-image: radial-gradient(circle, #050505, #141111, #0b0808, #161515, #0f0a0b, #181616, #181415, #251e1f, #211d1e, #231c1d, #1a1516, #101010);
     font-size: 10px;
-
-    
     .logo{
         width: 100px;
     }
@@ -47,3 +33,14 @@
     }
 
 }
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+    padding: 10px;
+  }
+  .grid_item {
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
