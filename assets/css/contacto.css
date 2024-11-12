@@ -6,13 +6,13 @@ section{
     .contenedor{
         margin-top: 10px;
         label{
-            width: 200px;
+           
             color: #ffa500;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
         }
         input{
-            width: 500px;
+            width: 200px;
         }
         legend{
             color: orange;
