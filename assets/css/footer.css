@@ -48,7 +48,12 @@
     .grid_container{
         display: block;
         text-align: center;
+        padding: 0px;
         
+    }
+    .fa-whatsapp{
+        bottom: 20px;
+        right: 20px;
     }
   
   }
