@@ -6,9 +6,13 @@ section{
     .contenedor{
         margin-top: 10px;
         label{
+            width: 400px;
             color: #ffa500;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
+        }
+        input{
+            width: 500px;
         }
         legend{
             color: orange;
@@ -21,7 +25,7 @@ section{
         button{
             background-color: #ffa500;
             border:1px solid gray;
-            border-radius: 50%;
+            border-radius: 10%;
             a{
                 text-decoration: none;
             }
