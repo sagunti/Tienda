@@ -1,0 +1,239 @@
+* {
+    font-family: "Fira Sans Condensed", sans-serif;
+    
+}
+
+body{
+    background-color: black;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.41);
+    padding:10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0;
+    z-index:1005;
+    height:15vh;
+    img{
+        width: 10%;
+        height: 10%;
+    }
+    nav{
+        width: 50%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            li{
+                a{
+                    text-decoration: none;
+                    color:orange;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    
+    }
+    
+}
+hr{
+    
+    border-color: orange;
+}
+/*principal*/
+.principalIndex{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image:url("../imagenes/alfombrilla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    height: 85vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    .contenedorTextoPrincipalIndex{
+        z-index: 1002;
+        margin:0 auto;
+        margin-top: 30px;
+        padding:10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 50%;
+        font-size: 10px;
+        color: orange;
+        backdrop-filter: blur(15px);
+        
+        
+        p{
+            font-size: 2.5em;
+        }
+        
+    }
+}
+/*Cards*/
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: orange;
+}
+.galeria{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    div{
+        text-align: center;
+        background-color: orange;
+        border:1px solid gray;
+        color:black;
+        width: 300px; 
+        height: 80%;
+           
+        }
+    }
+    .imagenItem{
+       margin-top: 5px;
+       
+    }
+    .imagenItem:hover{
+        transition-duration: 1s;
+        transform:rotateY(360deg);
+    }
+        
+    #Xatu:hover{ 
+        content: url("../../assets/imagenes/Xatu.png"); 
+    }
+  
+    #Charizard:hover{
+        content: url("../../assets/imagenes/Charizard.png");
+}
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/*opinion clientes*/
+.opinionClientes{
+    text-align: center;
+    color: orange;
+    .galeriaClientes{
+        background-color: orange;
+        padding:50px;
+        margin:0 auto;
+        width: 60%;
+        display:flex;
+        justify-content: space-evenly;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        .tarjetaClientes{
+            width: 250px;
+            color: black;
+            .imagenCliente{
+                width: 20%;
+                height: 20%;
+            }
+        }
+    }
+}
+
+/*footer*/
+.footer{
+   
+    background-image: radial-gradient(circle, #050505, #141111, #0b0808, #161515, #0f0a0b, #181616, #181415, #251e1f, #211d1e, #231c1d, #1a1516, #101010);
+    font-size: 10px;
+    
+    ul{
+        list-style: none;
+      
+        a{
+            text-decoration: none;
+            color:  orange;
+            font-size: 1.5em;
+        }
+        .fa-instagram, .fa-facebook, .fa-twitter{
+            color: orange;
+            font-size: 3em;
+        }
+    }
+    .fa-whatsapp{
+        font-size: 5em;
+        color:rgb(44, 181, 44);
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+       
+    }
+    p{
+        font-size: 1.5em;
+        color: orange;
+      
+    }
+
+}
+.grid_container {
+   
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+    padding: 10px;
+  }
+  .grid_item {
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  @media screen and (max-width:590px){
+    .grid_container{
+        display: block;
+        text-align: center;
+        padding: 0px;
+        
+    }
+  .fa-whatsapp{
+    bottom: 50px;
+    right: 50px;
+  }
+  }
+
+@media screen and (max-width:768px){
+    .header{width: 80%;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        
+        nav{
+            width: max-content;
+            ul{
+                justify-content:space-around;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:590px){
+    .header{
+        width: 80%;
+        flex-direction: column;
+        align-items: start;
+        nav{
+            width: auto;
+            ul{
+                display: contents;
+               }
+           }   
+       }
+       .principalIndex{
+        height: 50vh;
+        .contenedorTextoPrincipalIndex{
+            
+            margin-top: 10px;
+            backdrop-filter: blur(5px);
+        }
+       }
+}
