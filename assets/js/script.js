@@ -17,7 +17,7 @@ fetch("./posts.json")
       
               <div class="item">
             
-              <img class="imagenItem"id="${post.title}" src="../../assets/imagenes/reverso.png" alt="${post.title}">
+              <img class="imagenItem"id="${post.title}" src="../assets/imagenes/reverso.png" alt="${post.title}">
               <h2 class="TituloItem">${post.title}</h2>
               <h3>${post.body}</h3>
               <p> € ${post.precio}</p>
