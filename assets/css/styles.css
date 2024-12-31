@@ -187,6 +187,10 @@ p{
     text-align: center;
   }
 
+  .carrito{
+    color: orange;
+  }
+
   @media screen and (max-width:590px){
     .grid_container{
         display: block;
