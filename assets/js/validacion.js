@@ -63,6 +63,6 @@ document.getElementById("miFormulario").addEventListener("submit", event => {
     // Si el formulario es válido, se puede enviar
     if (formularioValido) {
         alert("Formulario enviado correctamente.");
-        // aca se puede hacer la accion del envio al api del backend
+      
     }
 });
