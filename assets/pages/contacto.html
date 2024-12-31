@@ -39,17 +39,19 @@
             <legend>Datos Personales:</legend>
         
         <div class="">
-            <label for="name" id="nombre">Nombre: </label>
-        <input type="text" name="name" >
-        <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
+            <label for="name" >Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+        
         </div>
         <div>
-            <label for="apellido" id="apellido">Apellido: </label>
-        <input type="text" name="apellido" >
+            <label for="apellido" >Apellido: </label>
+        <input type="text" name="apellido" id="apellido" >
+        
         </div>
         <div class="">
-            <label for="email" id="email">Correo E: </label>
-            <input type="email" name="email">
+            <label for="email" >Correo E: </label>
+            <input type="email" name="email" id="email">
+            
         </div>
         <div>
         <label for="telefono" id="telefono">Telefono: </label>
@@ -67,15 +69,16 @@
             <textarea name="consulta" id="consulta"></textarea>
         </div>
     </fieldset>
-        <button type="submit" >Enviar</button>
+        <button type="submit">Enviar</button>
         <input type="hidden" name="_next" value="https://sagunti.github.io/Tienda/">
         <input type="hidden" name="_captcha" value="false">
         <button type="reset">Borrar</button>
         <button type="button"><a href="../../index.html">Volver</a></button>
     </form>
     </div>
+    <script src="/assets/js/validacion.js"></script>
 </section>
-<script src="../js/validacion.js"></script>
+
 
 </body>
 

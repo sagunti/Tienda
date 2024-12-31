@@ -1,68 +1,54 @@
-document.getElementById("miFormulario").addEventListener("submit", event => {
-    // Prevenir el envío del formulario
-    event.preventDefault();
+const formulario = document.getElementById("miFormulario");
 
-    // Obtener los valores de los campos
-    const nombre = document.getElementById("nombre").value.trim();
-    const apellido = document.getElementById("apellido").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const telefono = document.getElementById("telefono").value.trim();
-    const mensaje = document.getElementById("mensaje").value.trim();
+const nombre = document.getElementById("nombre");
 
-    // Variables para los mensajes de error
-    const errorNombre = document.getElementById("errorNombre");
-    const errorApellido = document.getElementById("errorApellido");
-    const errorEmail = document.getElementById("errorEmail");
-    const errorTelefono = document.getElementById("errorTelefono");
-    const errorMensaje = document.getElementById("errorMensaje");
+const apellido = document.getElementById("apellido");
 
-    // Inicializar validación
-    let formularioValido = true;
+const email = document.getElementById("email");
 
-    // Validar nombre
-    if (nombre === "") {
-        errorNombre.classList.remove("d-none");
-        formularioValido = false;
-    } else {
-        errorNombre.classList.add("d-none");
+const telefono = document.getElementById("telefono");
+
+const consulta = document.getElementById("consulta");
+
+formulario.addEventListener("submit",(e) => {
+    e.preventDefault();
+
+    if(nombre.value.trim() ==="") {
+        alert("Por favor, ingrese su nombre.");
+        return;
+    }
+    if(nombre.value.length < 3) {
+        alert("El nombre debe tener al menos 3 caracteres.");
+        return;
     }
 
-     // Validar apellido
-     if (apellido === "") {
-        errorApellido.classList.remove("d-none");
-        formularioValido = false;
-    } else {
-        errorApellido.classList.add("d-none");
+    if(apellido.value.trim() ==="") {
+        alert("Por favor, ingrese su apellido.");
+        return;
+    }
+    if(apellido.value.length < 3) {
+        alert("El apellido debe tener al menos 3 caracteres.");
+        return;
+    }
+    if(email.value.trim() ==="") {
+        alert("Por favor, ingrese su correo electrónico.");
+        return;
+    }
+    if(!email.value.includes("@")) {
+        alert("Por favor, ingrese un correo electrónico válido.");
+        return;
     }
 
-    // Validar email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        errorEmail.classList.remove("d-none");
-        formularioValido = false;
-    } else {
-        errorEmail.classList.add("d-none");
+    if(!telefono.value.trim()==="") {
+        alert("Por favor, ingrese un telefono válido.");
+        return;
     }
+    if(consulta.value.length < 40) {
+        alert("La consulta debe tener al menos 40 caracteres.");
+        return;
+    }
+    alert("Formulario enviado con éxito.")
 
-     // Validar telefono
-     if (telefono === "") {
-        errorTelefono.classList.remove("d-none");
-        formularioValido = false;
-    } else {
-        errorTelefono.classList.add("d-none");
-    }
+    formulario.reset();
 
-    // Validar mensaje
-    if (mensaje.length < 10) {
-        errorMensaje.classList.remove("d-none");
-        formularioValido = false;
-    } else {
-        errorMensaje.classList.add("d-none");
-    }
-
-    // Si el formulario es válido, se puede enviar
-    if (formularioValido) {
-        alert("Formulario enviado correctamente.");
-      
-    }
 });
