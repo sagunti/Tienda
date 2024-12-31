@@ -30,7 +30,12 @@ section{
                 text-decoration: none;
             }
         }
-
+        .d-none{
+            display: none;
+        }
+        .text-danger{
+            color: red;
+        }
     }
 }
 

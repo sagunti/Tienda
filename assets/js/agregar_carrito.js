@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Guardar el carrito actualizado en localStorage
             localStorage.setItem("carrito", JSON.stringify(carrito));
-
             alert(`${nombre} agregado al carrito.`);
         });
     });
