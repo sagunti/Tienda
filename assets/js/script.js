@@ -21,7 +21,7 @@ fetch("./posts.json")
               <h2 class="TituloItem">${post.title}</h2>
               <h3>${post.body}</h3>
               <p> € ${post.precio}</p>
-              <button  class="btn-agregar" data-nombre="${post.title}" data-precio=${post.precio}>Comprar</button>
+              <button type="button" class="btn-agregar" data-nombre="${post.title}" data-precio=${post.precio}>Comprar</button>
               
           </div>
            
