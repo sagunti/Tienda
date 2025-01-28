@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("El apellido debe tener al menos 3 caracteres.");
         return;
     }
+    
     const email = document.getElementById("email").value;
     if(email.length == 0) {
         alert("Por favor, ingrese su correo electrónico.");
