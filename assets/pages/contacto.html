@@ -32,15 +32,15 @@
     <hr>
     <section >
         <div class="contenedor">
-    <form class="form" id="miFormulario" action="https://formsubmit.co/seralemon1@gmail.com" method="post">
+    <form class="form" id="Formulario" action="https://formsubmit.co/seralemon1@gmail.com" method="post">
       
         <fieldset>
             <legend>Datos Personales:</legend>
         
         <div class="">
-            <label for="name" >Nombre: </label>
+            <label for="nombre" >Nombre: </label>
         <input type="text" name="nombre" id="nombre">
-        
+        <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
         </div>
         <div>
             <label for="apellido" >Apellido: </label>
@@ -53,8 +53,8 @@
             
         </div>
         <div>
-        <label for="telefono" id="telefono">Telefono: </label>
-        <input type="number" name="telefono" >
+        <label for="telefono" >Telefono: </label>
+        <input type="number" name="telefono" id="telefono">
     </div>
 
     </fieldset>
@@ -67,15 +67,28 @@
             <label for="consulta">Consulta: </label>
             <textarea name="consulta" id="consulta"></textarea>
         </div>
+       
     </fieldset>
-        <button type="submit">Enviar</button>
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    <button type="button"><a href="../../index.html">Volver</a></button>
         <input type="hidden" name="_next" value="https://sagunti.github.io/Tienda/">
         <input type="hidden" name="_captcha" value="false">
-        <button type="reset">Borrar</button>
-        <button type="button"><a href="../../index.html">Volver</a></button>
+        
     </form>
+
+    <form action="/login.php" id="formulario">
+        <p>
+          Usuario: <input type="text" name="usuario" id="usuario">
+        </p>
+        <p>
+          Clave: <input type="text" name="clave" id="clave">
+        </p>
+        <input type="submit" value="Entrar">
+      </form>
     </div>
-    <script src="./assets/js/validacion.js"></script>
+    
+    <script src="../js/validacion.js"></script>
 </section>
 
 

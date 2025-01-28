@@ -1,54 +1,53 @@
-const formulario = document.getElementById("miFormulario");
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("Formulario").addEventListener('submit', validarFormulario); 
+  });
 
-const nombre = document.getElementById("nombre");
-
-const apellido = document.getElementById("apellido");
-
-const email = document.getElementById("email");
-
-const telefono = document.getElementById("telefono");
-
-const consulta = document.getElementById("consulta");
-
-formulario.addEventListener("submit",(e) => {
-    e.preventDefault();
-
-    if(nombre.value.trim() ==="") {
-        alert("Por favor, ingrese su nombre.");
-        return;
+  function validarFormulario(evento) {
+    evento.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    if(nombre.length == 0) {
+      alert('El campo nombre no puede estar vacio');
+      return;
     }
-    if(nombre.value.length < 3) {
+    if(nombre.length < 3) {
         alert("El nombre debe tener al menos 3 caracteres.");
         return;
     }
 
-    if(apellido.value.trim() ==="") {
-        alert("Por favor, ingrese su apellido.");
-        return;
+    const apellido = document.getElementById('apellido').value;
+    if (apellido.length == 0) {
+      alert('El campo apellido no puede estar vacio');
+      return;
     }
-    if(apellido.value.length < 3) {
+    if(apellido.length < 3) {
         alert("El apellido debe tener al menos 3 caracteres.");
         return;
     }
-    if(email.value.trim() ==="") {
+    const email = document.getElementById("email").value;
+    if(email.length == 0) {
         alert("Por favor, ingrese su correo electrónico.");
         return;
     }
-    if(!email.value.includes("@")) {
-        alert("Por favor, ingrese un correo electrónico válido.");
-        return;
-    }
+    
 
-    if(!telefono.value.trim()==="") {
+    const telefono = document.getElementById("telefono").value;
+    if(telefono.length == 0){
         alert("Por favor, ingrese un telefono válido.");
         return;
     }
-    if(consulta.value.length < 40) {
+    if(telefono.length <= 8){
+        alert("Por favor, el telefono debe tener al menos 8 digitos");
+        return;
+    }
+    if(telefono.length >= 10){
+        alert("Por favor, el telefono debe tener menos de 10 digitos");
+        return;
+    }
+    const consulta = document.getElementById("consulta").value;
+    if(consulta.length < 40) {
         alert("La consulta debe tener al menos 40 caracteres.");
         return;
     }
-    alert("Formulario enviado con éxito.")
 
-    formulario.reset();
-
-});
+    this.submit();
+  }
