@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function validarFormulario(evento) {
     evento.preventDefault();
+    
     const nombre = document.getElementById('nombre').value;
     if(nombre.length == 0) {
       alert('El campo nombre no puede estar vacio');
@@ -25,10 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     const email = document.getElementById("email").value;
+    var regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     if(email.length == 0) {
         alert("Por favor, ingrese su correo electrónico.");
         return;
     }
+    if (!regex.test(email)) {
+        document.getElementById("resultado").innerHTML =  alert("Por favor, ingrese un correo electrónico valido.");;
+    } 
+  
     
 
     const telefono = document.getElementById("telefono").value;
