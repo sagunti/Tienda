@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
     if (!regex.test(email)) {
-        document.getElementById("resultado").innerHTML =  alert("Por favor, ingrese un correo electrónico valido.");;
+        document.getElementById("resultado").innerHTML =  alert("Por favor, ingrese un correo electrónico valido.");
     } 
   
     
